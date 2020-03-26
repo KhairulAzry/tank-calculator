@@ -1,113 +1,56 @@
-/*==================== General ====================*/
-
-
 * {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-body, html {
-	height: 100%;
-	font-family: sans-serif;
+html,
+body {
+  height: 100%;
 }
-
-h1 {
-	text-align: center;
-	color: #fff;
-	padding: 50px;
+body {
+  background-color: #1a1a1a;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #ccc;
 }
-
-h3 {
-	text-align: center;
-	color: #000;
-	padding: 10px 0;
+input[type="text"] {
+  background-color: transparent;
+  margin-top: 30px;
+  border: 0;
+  border-bottom: solid 1px #8080ff;
+  text-align: center;
+  font-size: 20px;
+  color: #518bf0;
+  text-shadow: 0 0 3px #518bf0;
+  width: 45px;
+  display: inline-block;
 }
-
-form {
-	padding: 10px;
+input:focus {
+  outline: 0;
+  border-bottom: dashed 1px #ff8080;
 }
-
-svg {
-	text-align: center;
+input::-moz-selection {
+  color: #1a1a1a;
+  background-color: #c6e4ee;
 }
-
-input {
-	border-radius: 10px;
-	padding: 10px 20px;
-	margin: 5px auto;
+input::selection {
+  color: #1a1a1a;
+  background-color: #c6e4ee;
 }
-
-select {
-	border-radius: 10px;
-	padding: 5px 20px;
-	margin: 5px auto;
+::-webkit-input-placeholder {
+  color: #7aa6f3;
+  text-shadow: 0 0 3px #7aa6f3;
 }
-
-button {
-	border:none;
-	border-radius: 10px;
-	color: white;
-	background-color: #011C7A;
-	margin: 10px auto;
-	padding: 10px 20px;
-	text-align: center;
-	font-size: 14px;
-	cursor: pointer;
+:-moz-placeholder {
+  color: #7aa6f3;
+  text-shadow: 0 0 3px #7aa6f3;
 }
-
-/*==================== Main ====================*/
-
-.limiter {
-	width: 100%;
-	margin: 0 auto;
-	min-height: 120vh;
-	background: #333;
+::-moz-placeholder {
+  color: #7aa6f3;
+  text-shadow: 0 0 3px #7aa6f3;
 }
-
-.split-container {
-	text-align: center;
-	height: 100%;
+:-ms-input-placeholder {
+  color: #7aa6f3;
+  text-shadow: 0 0 3px #7aa6f3;
 }
-
-.single-container {
-	/*display: inline-block;*/
-	text-align: center;
-	/*width: 30% !important;*/
-	/*min-height: 500px;*/
-	margin: 20px;
-	padding: 10px auto;
-	background: #fff;
-	border-radius: 10px;
-}
-
-.result {
-	background: #333;
-	color: #fff;
-}
-
-.center {
-  margin: 20px auto;
-  width: 50%;
-  padding: 10px;
-}
-
-.tank-image {
-	max-width: 50%;
-	text-align: center;
-}
-
-.tank-svg {
-	width: 100%;
-}
-
-.fluid-gradient {
-	/*fluid gradient here*/
-}
-
-
-/*==================== Display Result ====================*/
-
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

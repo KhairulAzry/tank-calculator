@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tank Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="limiter">
+		
+		<h1>Tank Calculator</h1>
+
+
+		<div class="split-container">
+			<div class="single-container center">
+				<h3>Input Form</h3>
+				<p>All measurements are in meter (m)</p>
+
+				<form class="" data-type="horizontal" id="tank">
+                    <div class="form-group">
+                        <label for="tankdiameter">
+                            Diameter
+                        </label>
+                        <input id="tankdiameter" name="tankdiameter" type="text" placeholder="4.0">
+                    </div>
+                    <div class="form-group">
+                        <label for="tank-length">
+                            Length
+                        </label>
+                        <input id="tanklength" name="tanklength" type="text" placeholder="2.7">
+                    </div>
+                    <div class="form-group">
+                        <label for="liquidheight">
+                            Liquid Height
+                        </label>
+                        <input id="liquidheight" name="liquidheight" type="text" placeholder="3.0">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Calculate</button>
+                    </div>
+                </form>
+
+			</div> <!-- Input Form Container ends -->
+
+			<div class="single-container center result">
+				<h3 style="color: #fff;">Tank Balance</h3>
+
+				<div class="wrapper">
+					<div class="green">
+					    <div class="progress">
+					      	<div class="inner">
+					        	<div class="percent"><span>67</span>%</div>
+					        	<div class="water"></div>
+					        	<div class="glare"></div>
+				      		</div>
+				    	</div>
+				  	</div>
+			  	</div>
+
+			</div>
+		</div><!-- Split Container ends -->
+
+
+	</div><!-- Limiter ends -->
+
+	<script src="scripts.js"></script>
+</body>
+</html>

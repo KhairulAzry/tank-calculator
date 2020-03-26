@@ -13,38 +13,26 @@
 		<div class="split-container">
 			<div class="single-container center">
 				<h3>Input Form</h3>
+				<p>All measurements are in meter (m)</p>
 
-
-
-				<form class="tank-calculator-form horizontal" data-type="horizontal" id="ignore">
+				<form class="" data-type="horizontal" id="tank">
                     <div class="form-group">
-                        <label for="hori-measurement-units">
-                            Measurement units
-                        </label>
-                        <select id="hori-measurement-units" name="measurement-units">
-                            <option value="mm">mm</option>
-                            <option value="cm">cm</option>
-                            <option value="m">m</option>
-                            <option value="inches">inches</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="hori-diameter">
+                        <label for="tankdiameter">
                             Diameter
                         </label>
-                        <input id="hori-diameter" name="diameter" type="text" value="3.5">
+                        <input id="tankdiameter" name="diameter" type="text" placeholder="4.0">
                     </div>
                     <div class="form-group">
-                        <label for="hori-height">
+                        <label for="tank-length">
                             Length
                         </label>
-                        <input id="hori-height" name="height" type="text" value="2.7">
+                        <input id="tanklength" name="length" type="text" placeholder="2.7">
                     </div>
                     <div class="form-group">
-                        <label for="hori-liquid-height">
+                        <label for="liquidheight">
                             Liquid Height
                         </label>
-                        <input id="hori-liquid-height" name="liquid-height" type="text" value="5.5">
+                        <input id="liquidheight" name="liquidheight" type="text" placeholder="3.0">
                     </div>
                     <div class="form-group">
                         <button type="submit">Calculate</button>
@@ -54,7 +42,7 @@
 			</div> <!-- Input Form Container ends -->
 
 			<div class="single-container center">
-				<h3>Display Result</h3>
+				<h3>Tank Balance</h3>
 
 				<div class="tank-image center">
 					<div class="tank-svg" data-fallback="img/horizontal.png">
