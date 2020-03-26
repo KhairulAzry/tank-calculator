@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tank Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="limiter">
+		
+		<h1>Tank Calculator</h1>
+
+
+		<div class="split-container">
+			<div class="single-container">
+				<h3>Input Form</h3>
+
+				<form class="tank-calculator-form horizontal" data-type="horizontal" id="ignore">
+                    <div class="form-group">
+                        <label for="hori-measurement-units">
+                            Measurement units
+                        </label>
+                        <select id="hori-measurement-units" name="measurement-units">
+                            <option value="mm">mm</option>
+                            <option value="cm">cm</option>
+                            <option value="m">m</option>
+                            <option value="inches">inches</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hori-diameter">
+                            Diameter
+                        </label>
+                        <input id="hori-diameter" name="diameter" type="text" value="3.5">
+                    </div>
+                    <div class="form-group">
+                        <label for="hori-height">
+                            Length
+                        </label>
+                        <input id="hori-height" name="height" type="text" value="2.7">
+                    </div>
+                    <div class="form-group">
+                        <label for="hori-liquid-height">
+                            Liquid Height
+                        </label>
+                        <input id="hori-liquid-height" name="liquid-height" type="text" value="5.5">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Calculate</button>
+                    </div>
+                </form>
+
+			</div> <!-- Input Form Container ends -->
+
+			<div class="single-container">
+				<h3>Display Result</h3>
+
+	                <div class="tank-image">
+	                    <div class="tank-svg horizontal" data-fallback="https://www.crownoilenvironmental.co.uk/wp-content/themes/crownenvironmental-new/img/calculator/horizontal.png">
+	                        <svg enable-background="new 0 0 322.6 204.3" viewBox="0 0 322.6 204.3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							    <defs>
+							        <clipPath id="hori-cut-off-bottom">
+							            <rect x="0" y="35.48571428571428" width="100%" height="129"></rect>
+							        </clipPath>
+							    </defs>
+							    <linearGradient gradientUnits="userSpaceOnUse" id="hori-tank-fill" x1="183.038" x2="183.038" y1="3" y2="137.413">
+							        <stop offset="0" style="stop-color:#F2F4D3"></stop>
+							        <stop offset=".136" style="stop-color:#F3EBB7"></stop>
+							        <stop offset=".433" style="stop-color:#F4D468"></stop>
+							        <stop offset=".487" style="stop-color:#F4D058"></stop>
+							        <stop offset="1" style="stop-color:#F0A800"></stop>
+							    </linearGradient>
+							    <path d="M319.6 70.2c0-36.7-12.3-66.5-23.8-67.2H70.6C58.9 3 46.4 33.1 46.4 70.2s12.5 67.2 24.2 67.2h225.2c11.6-.7 23.8-30.5 23.8-67.2z" clip-path="url(#hori-cut-off-bottom)" fill="url(#hori-tank-fill)" class="thingy"></path>
+							    <path d="M87.7 119.5h19.9v41.7H87.7zM256.5 119.5h19.9v41.7h-19.9z" fill="#fff" stroke="#706F6F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="6"></path>
+							    <path d="M319.6 70.2c0-36.7-12.3-66.5-23.8-67.2H70.6C58.9 3 46.4 33.1 46.4 70.2s12.5 67.2 24.2 67.2h225.2c11.6-.7 23.8-30.5 23.8-67.2z" fill="none" stroke="#706F6F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="6"></path>
+							    <path d="M69.5 2.9v134.5" fill="none" stroke="#706F6F" stroke-dasharray="5" stroke-miterlimit="10" stroke-width="1.003"></path>
+							    <g fill="none" stroke="#706F6F" stroke-miterlimit="10" stroke-width="1.003">
+							        <path d="M296.2 2.9v2.5"></path>
+							        <path d="M296.2 10.6v121.8" stroke-dasharray="5.1825,5.1825"></path>
+							        <path d="M296.2 134.9v2.5"></path>
+							    </g>
+							    <linearGradient gradientUnits="userSpaceOnUse" id="hori-foot-1" x1="97.612" x2="97.612" y1="157.114" y2="124.204">
+							        <stop offset="0" style="stop-color:#E3E3E3"></stop>
+							        <stop offset=".607" style="stop-color:#EFEFEF"></stop>
+							        <stop offset="1" style="stop-color:#F9F9F9"></stop>
+							    </linearGradient>
+							    <path d="M87.7 119.5h19.9v41.7H87.7z" fill="url(#hori-foot-1)" stroke="#706F6F" stroke-miterlimit="10" stroke-width="1.003"></path>
+							    <linearGradient gradientUnits="userSpaceOnUse" id="hori-foot-2" x1="266.397" x2="266.397" y1="157.114" y2="124.204">
+							        <stop offset="0" style="stop-color:#E3E3E3"></stop>
+							        <stop offset=".607" style="stop-color:#EFEFEF"></stop>
+							        <stop offset="1" style="stop-color:#F9F9F9"></stop>
+							    </linearGradient>
+							    <path d="M256.5 119.5h19.9v41.7h-19.9z" fill="url(#hori-foot-2)" stroke="#706F6F" stroke-miterlimit="10" stroke-width="1.003"></path>
+							    <path d="M2 58h7.4c1.7 0 2.9.1 3.8.4 1.2.3 2.2 1 3 1.8.8.9 1.5 2 1.9 3.2.4 1.3.7 2.9.7 4.7 0 1.6-.2 3.1-.6 4.3-.5 1.5-1.2 2.6-2.1 3.5-.7.7-1.6 1.2-2.8 1.6-.9.3-2.1.4-3.6.4H2V58zm4.1 3.4v13.3h3c1.1 0 1.9-.1 2.4-.2.7-.2 1.2-.4 1.6-.8.4-.4.8-1 1.1-1.9.3-.9.4-2.1.4-3.7 0-1.5-.1-2.7-.4-3.6-.3-.8-.7-1.5-1.1-1.9s-1.1-.8-1.9-.9c-.6-.1-1.7-.2-3.3-.2H6.1z" fill="#706F6F"></path>
+							    <g fill="none" stroke="#E30613" stroke-miterlimit="10" stroke-width="4">
+							        <path d="M9.8 51.9V4.6M.1 2.7h19.3"></path>
+							    </g>
+							    <g fill="none" stroke="#E30613" stroke-miterlimit="10" stroke-width="4">
+							        <path d="M9.8 87.2v46.4M19.4 135.4H.1"></path>
+							    </g>
+							    <path d="M173.6 193.8v-19.9h4v16.5h10.1v3.4h-14.1z" fill="#706F6F"></path>
+							    <g fill="none" stroke="#E30613" stroke-miterlimit="10" stroke-width="4">
+							        <path d="M165.1 183.4H56.6M54.8 193.1v-19.3"></path>
+							    </g>
+							    <g fill="none" stroke="#E30613" stroke-miterlimit="10" stroke-width="4">
+							        <path d="M196.7 183.4l118.4.1M316.9 193.2l.1-19.4"></path>
+							    </g>
+							</svg>
+	                    </div>
+
+	                </div>
+	                <table id="tank-results">
+	                    <thead>
+	                        <tr>
+	                            <th class="measurement">Measurement</th>
+	                            <th class="capacity">Tank Capacity</th>
+	                            <th class="capacity">Tank Contents</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr class="measurement" data-measure="litres">
+	                            <td>Litres</td>
+	                            <td class="capacity"><span class="result">25977.04</span>L</td>
+	                            <td class="contents"><span class="result">21503.19</span>L</td>
+	                        </tr>
+	                        <tr class="measurement" data-measure="m3">
+	                            <td>m<sup>3</sup></td>
+	                            <td class="capacity"><span class="result">25.98</span>m<sup>3</sup></td>
+	                            <td class="contents"><span class="result">21.5</span>m<sup>3</sup></td>
+	                        </tr>
+	                        <tr class="measurement" data-measure="gallonsUk">
+	                            <td>Gallons (UK)</td>
+	                            <td class="capacity"><span class="result">5714.14</span> gal</td>
+	                            <td class="contents"><span class="result">4730.03</span> gal</td>
+	                        </tr>
+	                        <tr class="measurement" data-measure="gallonsUs">
+	                            <td>Gallons (US)</td>
+	                            <td class="capacity"><span class="result">6862.41</span> gal</td>
+	                            <td class="contents"><span class="result">5680.54</span> gal</td>
+	                        </tr>
+	                        <tr class="measurement" data-measure="barrels">
+	                            <td>Barrels</td>
+	                            <td class="capacity"><span class="result">163.39</span> barrels</td>
+	                            <td class="contents"><span class="result">135.25</span> barrels</td>
+	                        </tr>
+	                        <tr class="measurement" data-measure="ft3">
+	                            <td>ft<sup>3</sup></td>
+	                            <td class="capacity"><span class="result">917.37</span>ft<sup>3</sup></td>
+	                            <td class="contents"><span class="result">759.38</span>ft<sup>3</sup></td>
+	                        </tr>
+	                        <tr class="note">
+	                            <td colspan="3">Calculation Results (Approximate)</td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+			</div> <!-- Display Result Container ends -->
+		</div><!-- Split Container ends -->
+
+
+	</div><!-- Limiter ends -->
+
+	<script src="scripts.js"></script>
+</body>
+</html>

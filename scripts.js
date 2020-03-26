@@ -1,0 +1,3 @@
+function calculateTankSize(argument) {
+	// body...
+}
