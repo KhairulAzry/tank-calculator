@@ -28,6 +28,34 @@ form {
 	padding: 10px;
 }
 
+svg {
+	text-align: center;
+}
+
+input {
+	border-radius: 10px;
+	padding: 10px 20px;
+	margin: 5px auto;
+}
+
+select {
+	border-radius: 10px;
+	padding: 5px 20px;
+	margin: 5px auto;
+}
+
+button {
+	border:none;
+	border-radius: 10px;
+	color: white;
+	background-color: #011C7A;
+	margin: 10px auto;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+}
+
 /*==================== Main ====================*/
 
 .limiter {
@@ -39,16 +67,35 @@ form {
 
 .split-container {
 	text-align: center;
-	height: 80%;
+	height: 100%;
 }
 
 .single-container {
 	display: inline-block;
 	text-align: center;
-	width: 40%;
-	min-height: 500px;
+	width: 30% !important;
+	/*min-height: 500px;*/
 	margin: 20px;
-	padding: 10px;
+	padding: 10px auto;
 	background: #fff;
 	border-radius: 10px;
+}
+
+.center {
+  margin: 20px auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.tank-image {
+	max-width: 50%;
+	text-align: center;
+}
+
+.tank-svg {
+	width: 100%;
+}
+
+.fluid-gradient {
+	/*fluid gradient here*/
 }
